@@ -1,0 +1,23 @@
+.marquee {
+    display: flex;
+    animation: marquee 20s linear infinite;
+  }
+  
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  /* Hover Effect to Pause the Animation */
+  .marquee:hover {
+    animation-play-state: paused;
+  }
+  /* Custom Pause Animation Class */
+.motion-safe\:group-hover\:paused:hover {
+    animation-play-state: paused;
+  }
+  
