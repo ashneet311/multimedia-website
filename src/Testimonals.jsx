@@ -49,9 +49,10 @@ const Testimonials = () => {
           </p>
         </div>
 
-        {/* Moving Testimonials Carousel */}
+        {/* Moving Testimonials Carousel  <div className="overflow-x-hidden relative w-full group">
+          <div className="flex animate-marquee motion-safe:group-hover:paused space-x-4 sm:space-x-6" */}
         <div className="relative">
-          <div className="flex space-x-6 animate-marquee">
+          <div className="flex animate-marquee motion-safe:group-hover:paused space-x-4 sm:space-x-6">
             {testimonials.concat(testimonials).map((testimonial, index) => (
               <div key={index} className="bg-white p-6 rounded-xl shadow-md border border-gray-200 min-w-[300px] sm:min-w-[350px] md:min-w-[400px]">
                 <i className="fa fa-quote-left text-[#FF4A38] text-3xl"></i>
@@ -75,7 +76,7 @@ const Testimonials = () => {
         <div className="text-center mt-8 sm:mt-10">
           <a
             href="/testimonials"
-            className="bg-[#FF4A38] text-white px-6 py-3 rounded-full text-sm sm:text-lg hover:bg-orange-600 transition duration-300"
+            className="bg-[#FF4A38] text-white px-6 py-3 rounded-full text-sm sm:text-lg hover:bg-blue-600 transition duration-300"
           >
             READ MORE
           </a>

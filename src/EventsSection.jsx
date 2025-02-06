@@ -31,8 +31,8 @@ const EventsSection = () => {
         </div>
 
         {/* Scrolling Images */}
-        <div className="overflow-hidden relative">
-          <div className="flex animate-marquee space-x-4 group-hover:pause">
+          <div className="overflow-x-hidden relative w-full group">
+          <div className="flex animate-marquee motion-safe:group-hover:paused space-x-4 sm:space-x-6">
             {eventImages.concat(eventImages).map((src, idx) => (
               <img
                 key={idx}

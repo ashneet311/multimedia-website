@@ -26,7 +26,7 @@ const Home = () => {
         <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6 text-sm sm:text-lg mt-4 sm:mt-0 text-center">
           <span>1800 </span>
           <span>info@brilliko.com</span>
-          <button className="bg-yellow-400 text-black px-4 sm:px-6 py-2 rounded-lg shadow-lg hover:bg-yellow-500">
+          <button className="bg-yellow-400 text-black px-4 sm:px-6 py-2 rounded-lg shadow-lg hover:bg-blue-500">
             BOOK
           </button>
         </div>
@@ -44,7 +44,7 @@ const Home = () => {
             We have a track record of maintaining 100% job placement with every batch.
           </p>
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
-            <button className="w-full sm:w-auto bg-orange-500 text-white px-6 py-3 rounded-full text-lg shadow-md hover:bg-orange-600">
+            <button className="w-full sm:w-auto bg-orange-500 text-white px-6 py-3 rounded-full text-lg shadow-md hover:bg-blue-600">
               VIEW COURSES
             </button>
             <button className="w-full sm:w-auto border border-white px-6 py-3 rounded-full text-lg hover:bg-white hover:text-black">
@@ -57,11 +57,11 @@ const Home = () => {
       {/* Courses Section */}
       <section className="bg-white py-8 sm:py-12 px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {[{ title: "Start Your Learning Journey", img: "/image1.webp", bg: "bg-orange-500" },
+          {[{ title: "Start Your Learning Journey", img: "/image1.webp", bg: "bg-orange-500" ,  },
             { title: "Enhance Your Skills", img: "/image2.webp", bg: "bg-purple-700" },
             { title: "Professional Certificate", img: "/image3.webp", bg: "bg-blue-900" },].map((course, idx) => (
-            <div key={idx} className={`${course.bg} text-white p-4 sm:p-6 rounded-2xl shadow-lg text-center`}>
-              <img src={course.img} alt={course.title} className="rounded-lg mb-4 w-full h-40 sm:h-48 object-cover" />
+            <div key={idx} className={`${course.bg} text-white p-4 sm:p-4 rounded-2xl shadow-lg text-center transition transform hover:scale-105 hover:shadow-2xl`}>
+              <img src={course.img} alt={course.title} className="rounded-lg mb-4 w-full h-40 sm:h-48 object-cover border-2 border-white" />
               <h3 className="text-lg sm:text-xl font-bold mb-2">{course.title}</h3>
               <p className="text-sm sm:text-base">
                 {idx === 0 && "Begin your educational adventure with foundational knowledge."}
@@ -88,9 +88,9 @@ const Home = () => {
             </Link>
           </div>
           <div className="w-full md:w-1/2 grid grid-cols-2 gap-4">
-            <img src="/about1.webp" alt="VFX" className="w-full h-32 sm:h-40 object-cover rounded-xl" />
-            <img src="/about2.webp" alt="Animation" className="w-full h-64 sm:h-80 object-cover rounded-xl row-span-2" />
-            <img src="/about3.webp" alt="Game Design" className="w-full h-32 sm:h-40 object-cover rounded-xl" />
+            <img src="/about1.webp" alt="VFX" className="w-full h-32 sm:h-40 object-fill rounded-xl" />
+            <img src="/about2.webp" alt="Animation" className="w-full h-64 sm:h-80 object-fill rounded-xl row-span-2" />
+            <img src="/about3.webp" alt="Game Design" className="w-full h-32 sm:h-40 object-fill rounded-xl" />
           </div>
         </div>
       </section>
@@ -137,9 +137,9 @@ const Home = () => {
       <Rec />
       <section 
       className="relative py-16 bg-cover bg-center text-white" 
-      style={{ backgroundImage: "url('/background1.webp')" }}
+      style={{ backgroundImage: "url('/background05.webp')" }}
     >
-      <div className="absolute inset-0 bg-black opacity-50"></div> {/* Overlay */}
+      <div className="absolute inset-0 bg-pink opacity-50"></div> {/* Overlay */}
 
       <div className="relative container mx-auto text-center max-w-3xl px-4">
         <h3 className="text-2xl md:text-3xl font-bold mb-2">For Admissions &amp; Career Counselling</h3>
@@ -152,7 +152,7 @@ const Home = () => {
 
         <a 
           href="https://www.brilliko.com/register.php" 
-          className="inline-block bg-orange-500 hover:bg-orange-600 text-white text-lg px-8 py-3 rounded-full shadow-lg"
+          className="inline-block bg-orange-500 hover:bg-blue-600 text-white text-lg px-8 py-3 rounded-full shadow-lg"
         >
           BOOK A FREE DEMO
         </a>
